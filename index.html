@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Download File In Popup</title>
+</head>
+<body>
+    <h1>Test Download File In Popup</h1>
+    <button onclick="openPopup()">Open Popup</button>
+
+    <script>
+        function openPopup() {
+            window.open(
+                'https://test-pages.menlotest.com/test-files/files_for_manual/other_files/test_iframe.html',       // URL to open
+                'PopupWindow',      // Window name
+                'width=600,height=400,toolbar=no,location=no,menubar=no,scrollbars=no,resizable=no'
+            );
+        }
+    </script>
+</body>
+</html>

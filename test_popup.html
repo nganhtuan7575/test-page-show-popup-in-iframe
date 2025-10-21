@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Two Files</title>
+</head>
+<body>
+
+    <h2>Download Two Files</h2>
+	
+    <!-- Hidden form 1 -->
+    <form id="form1" action="https://httpbin.org/post" method="POST" target="main_iframe">
+        <!-- Example hidden input if needed -->
+		<input type="hidden" name="file" value="file1">
+		<button type="submit">Download File 1</button>
+    </form>
+
+    <!-- Hidden form 2 -->
+    <form id="form2" action="https://httpbin.org/anything" method="POST" target="main_iframe">
+        <input type="hidden" name="file" value="file2">
+		<button type="submit">Download File 2</button>
+    </form>
+	<br/>
+    <!-- Button to trigger both downloads in parallel -->
+    <button onclick="submitBothFormsParallel()">Download Files</button>
+
+    <script>
+        function submitBothFormsParallel() {
+            document.getElementById('form1').submit();
+            document.getElementById('form2').submit();
+        }
+    </script>
+</body>
+</html>
