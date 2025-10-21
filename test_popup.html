@@ -25,14 +25,14 @@
     <h2>Download Two Files</h2>
 	<iframe name="form_iframe"></iframe>
     <!-- Hidden form 1 -->
-    <form id="form1" action="https://httpbin.org/post" method="POST" target="_self">
+    <form id="form1" action="https://httpbin.org/post" method="POST" target="form_iframe">
         <!-- Example hidden input if needed -->
 		<input type="hidden" name="file" value="file1">
 		<button type="submit">Download File 1</button>
     </form>
 
     <!-- Hidden form 2 -->
-    <form id="form2" action="https://httpbin.org/anything" method="POST" target="_self">
+    <form id="form2" action="https://httpbin.org/anything" method="POST" target="form_iframe">
         <input type="hidden" name="file" value="file2">
 		<button type="submit">Download File 2</button>
     </form>
@@ -48,5 +48,6 @@
     </script>
 </body>
 </html>
+
 
 
