@@ -2,8 +2,15 @@
 <html>
 <head>
     <title>Download Two Files</title>
+	<script type="text/javascript" charset="utf-8">
+		<!--
+			function init() {
+				document.getElementById("submit_btn1").click();
+			}
+		//-->
+	</script>
 </head>
-<body>
+<body onload="init();">
 	<br/>
     <h2>Download Two Files</h2>
     <!-- Hidden form 1 -->
@@ -26,7 +33,7 @@
 		<input type="hidden" name="content14" value="This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters.">
 		<input type="hidden" name="content15" value="This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters.">
 		<input type="hidden" name="content16" value="This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters. This is very long string for testing. Dummy war text.  At this point, this line has 100 characters.">
-		<button type="submit">Download File 1</button>
+		<button type="submit" id="submit_btn1">Download File 1</button>
     </form>
 
     <!-- Hidden form 2 -->
@@ -46,6 +53,7 @@
     </script>
 </body>
 </html>
+
 
 
 
