@@ -3,9 +3,17 @@
 <head>
     <title>Download Two Files</title>
 	<script type="text/javascript" charset="utf-8">
+        <!--
+            var pageListSize ="2";
+        //-->
+    </script>
+	<script type="text/javascript" charset="utf-8">
 		<!--
 			function init() {
-				document.getElementById("submit_btn1").click();
+				console.log("pageListSize: ", pageListSize);
+				if (pageListSize > 0) {
+					document.getElementById("submit_btn1").click();
+				}
 			}
 		//-->
 	</script>
@@ -53,6 +61,7 @@
     </script>
 </body>
 </html>
+
 
 
 
